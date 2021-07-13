@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delevery Service in India </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    #navbar {
+        display: flex;
+    }
+
+    #logo {
+        margin: 10px 34px;
+        border-radius: 100px;
+    }
+
+    #navbar ul {
+        display: flex;
+    }
+
+    #navbar {
+        position: relative;
+    }
+
+    #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100px;
+        width: 1500px;
+        z-index: -1;
+        opacity: 0.4;
+        margin-top: -10px;
+    }
+
+    #navbar ul li {
+        color: white;
+        list-style: none;
+    }
+
+    #navbar ul li a {
+        padding: 10px 20px;
+        display: block;
+        border-radius: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+
+    #navbar ul li a:hover {
+        padding: 10px 20px;
+        display: block;
+        border-radius: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        background: white;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        justify-items: center;
+        align-items: center;
+        height: 600px;
+        background: url('img/cake2.jpg');
+        width: 1100px;
+    }
+
+    #home::before {
+        content: "";
+        te;
+        height: 680px;
+        width: 100%;
+        z-index: -3;
+        margin-top: -110px;
+
+    }
+
+    .h-primary {
+        font-size: 2.8rem;
+        padding: 10px;
+      
+    }
+
+    #home h1 {
+        color: white;
+        text-align: 12px;
+    }
+
+    #home p {
+        color: white;
+        text-align: 12px;
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: cadetblue;
+        margin: 17px;
+
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        text-decoration: none;
+        background-color: silver;
+
+    }
+
+    .center {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .h-primary {
+        font-family: 'Bree sefif', serif;
+        font-size: 3.5rem;
+        padding: 12px;
+        margin-top: -20px;
+    }
+
+    .h-secondary {
+        font-family: 'Bree sefif', serif;
+        font-size: 2.8rem;
+        padding: 12px;
+    }
+
+    .services {
+        font-family: 'Bree sefif', serif;
+        margin: 10px;
+        display: flex;
+        padding: ;
+
+    }
+
+
+    .services .box {
+        border: 2px solid brown;
+        margin-top: 10px;
+        width: 650px;
+        height: 300px;
+        border-radius: 20px;
+        background-color: cornsilk;
+
+    }
+
+    .services .box1 {
+        border: 2px solid brown;
+        margin-top: px;
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+        background-color: cornsilk;
+    }
+
+    .services .box2 {
+        border: 2px solid brown;
+        margin-top: -10px;
+        width: 400px;
+        height: 300px;
+        background-color: cornsilk;
+        border-radius: 20px;
+    }
+
+    .services .box img {
+        height: 100px;
+        width: 150px;
+        margin-left: 170px;
+        margin-top: 20px;
+    }
+
+    .services .box h2 {
+        margin-top: -10px;
+        font-size: 2.0rem;
+    }
+
+    .services .box p {
+        margin-top: -15px;
+
+    }
+
+    .services .box1 {
+        border: 2px solid brown;
+        margin-top: 0px;
+        width: 500px;
+        height: 300px;
+    }
+
+    .services .box1 img {
+        height: 100px;
+        width: 150px;
+        margin-left: 170px;
+        margin-top: 20px;
+
+    }
+
+    .services .box1 h2 {
+        margin-top: -10px;
+
+    }
+
+    .services .box1 p {
+        margin-top: -15px;
+
+    }
+
+    .services .box2 {
+        border: 2px solid brown;
+        margin-top: px;
+        width: 500px;
+        height: 300px;
+        display: block;
+    }
+
+    .services .box2 img {
+        height: 100px;
+        width: 150px;
+        margin-left: 170px;
+        margin-top: 20px;
+    }
+
+    .services .box2 h2 {
+        margin-top: -10px;
+
+    }
+
+    .services .box2 p {
+        margin-top: -15px;
+
+    }
+
+    .last {
+        background-color: black;
+        width: 100%;
+        height: 150px;
+        margin-top: 10px;
+    }
+
+    .clients {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .h-primary {
+        margin-top: 20px;
+    }
+
+    .clients img {
+        margin-top: 20px;
+        height: 125px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .client-section {
+        height: 35px;
+    }
+
+    .client-section {
+        height: 35px;
+        content: "";
+        position: absolute;
+        background: url('img/meal6.jpg');
+        width: 1500px;
+        height: 350px;
+        z-index: -1;
+        opacity: 2.0;
+        margin-top: 15px;
+
+    }
+
+    .contact {
+        margin: center;
+        margin-top: 365px;
+        position: relative;
+        display: flex;
+    }
+
+    .contact h1 {
+        font-size: 50px;
+    }
+
+    .contact::before {
+        content: "";
+        background: url('img/contactus.jpg');
+        position: absolute;
+        width: 1390px;
+        height: 560px;
+        z-index: -1;
+        opacity: 1.2;
+
+    }
+
+    .contact1 {
+        margin-left: 65%;
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    #footer {
+        margin-top: 105px;
+        height: 20px;
+        background-color: black;
+        color: white;
+    }
+
+    .contact input {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .login{
+        
+        margin-left: 800px;
+        font-size: 20px;   
+        border: 1px solid rgb(236, 14, 14);
+        border-radius: 20px;
+        height: 45px;
+        background-color: rgb(114, 167, 137);
+    
+    }
+   .signup{
+       font-size: 20px;
+       border: 1px solid red;
+       border-radius: 20px;
+       height: 45px;
+       background-color: rgb(114, 167, 137);
+       margin-left: 10px;
+    }
+.foot{
+    margin-top: 375px;
+}
+</style>
+
+<body>
+
+
+    <nav id="navbar">
+
+        <ul id="ul1">
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Cake Types</a></li>
+            <li class="item"><a href="#">About us </a></li>
+            <li class="item"><a href="#">Contact</a></li>
+        </ul>
+        <ul id="ul1">
+            <li class="login"><a href="login.html">login</a></li>
+            <li class="signup"><a href="signup.html">Sign up</a> </li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">
+            Welcome to Kanchan's Cake Bakery
+        </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore at consequuntur libero doloribus quam nihil
+            quibusdam magnam porro </p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore at consequuntur libero </p>
+        <button class="btn"> <a href="login.html">   Order Now </a></button>
+    </section>
+    <section class="service-container">
+        <h1 class="h-primary center">
+            Our Services
+        </h1>
+        <div class="services">
+            <div class="box">
+                <img src="img/cake1.jpg" alt="">
+                <h2 class="h-secondary center">Cake Ordering</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore necessitatibus vero
+                    accusamus fuga inventore, ipsa repellendus tempora quos provident nam sequi dicta autem culpa ullam
+                    re </p>
+            </div>
+            <div class="services">
+                <div class="box1">
+                    <img src="img/cake3.jpg" alt="">
+                    <h2 class="h-secondary center">Cake Catering</h2>
+                    <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore necessitatibus
+                        vero accusamus fuga inventore, ipsa repellendus tempora quos provident nam sequi dicta autem
+                        culpa ull </p>
+                </div>
+                <div class="services">
+                    <div class="box2">
+                        <img src="img/cake4.jpg" alt="">
+                        <h2 class="h-secondary center">Bulk Ordering</h2>
+                        <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+                            necessitatibus vero accusamus fuga inventore, ipsa repellendus tempora quos provident nam
+                            sequi dicta autem culpa ullam recus </p>
+                    </div>
+
+                </div>
+    </section>
+    <section class="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div class="clients">
+            <div class="client-item">
+                <img src="img/applelogo.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/twitterlogo.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/amazonlogo.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/skype.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/hplogo.jpg" alt="Our Client">
+            </div>
+        </div>
+    </section>
+   
+
+    <footer class="foot">
+        <div class="center" id="footer">
+            copyright &copy; www.kanchancakebakery.com All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
